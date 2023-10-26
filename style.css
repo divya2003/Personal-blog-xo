@@ -1,0 +1,79 @@
+html,
+body,
+main {
+  height: 100%;
+}
+
+::-moz-selection {
+  background: #34495e;
+  color: #fff;
+}
+
+::selection {
+  background: #34495e;
+  color: #fff;
+}
+
+.jumbotron {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 0;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.photo-cover {
+  background: #34495e url(https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center center/cover fixed;
+  height: 100%;
+  position: relative;
+  
+}
+.photo-cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the last value (alpha) to control the level of dimming */
+}
+.background-primary {
+  background: #34495e;
+}
+
+.background-secondary {
+  background: #2c3e50;
+}
+
+.large {
+  font-size: 4em;
+}
+
+.medium {
+  font-size: 2em;
+}
+
+/* Zoom effect on thumbnail hover */
+.thumbnail {
+  transition: transform 0.3s; /* Smooth transition effect */
+}
+
+.thumbnail:hover {
+  transform: scale(1.1); /* Increase the scale for zoom effect */
+}
+
+/* Initial style for the navbar */
+.navbar {
+  background-color: transparent; /* Initial transparent background */
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Style for the navbar when scrolled */
+.navbar.scrolled {
+  background-color: #34495e; /* Change this to your desired background color */
+}
